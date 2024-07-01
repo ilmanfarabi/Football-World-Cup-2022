@@ -1,0 +1,623 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+/* Common Styles or utilities*/
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+header{
+    background-color: #2D25A0;
+
+}
+
+.login{
+    background-color: #E02C6D;
+    padding: 10px 24px;
+}
+    
+.login>i{
+    padding-right: 4px;
+}
+
+article, p{
+    font-weight: 200;
+}
+
+
+/* Navbar */
+.navbar{
+    display: flex;
+    align-content: space-around;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 42px;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+li {
+    display: inline;
+    padding-right: 36px;
+}
+
+
+/* Banner */
+.banner{
+
+    display: flex;
+    align-items: center;
+    padding-top: 205px;
+    padding-bottom: 169px;
+    margin-left: 17%;
+    justify-content: space-between;
+    align-content: center;
+   
+}
+
+.banner-title{
+    padding-right: 102px;
+}
+
+.banner-title>h1{
+    font-weight: 700;
+    font-size: 65px;
+    color: white;
+    margin-bottom: 27px;
+}
+
+.banner-title{
+    /* CSS animation */
+    animation-duration: 5s;
+    animation-name: slidein;
+    animation-iteration-count: 1;   
+}
+
+@keyframes slidein {
+    0% {
+        margin-left: 450px;
+    }
+
+    100% {
+      margin-left: 0%;
+    }
+}
+
+.watch-live{
+    background-color: #E02C6D;
+    padding: 10px 24px;
+}
+
+.watch-live>i{
+    padding-left: 5px;
+}
+
+.watch-live:hover{
+    transition-delay: 0.5s;
+    border: 1px solid white;
+}
+
+.watch-live:hover>i{
+    animation: iconmove 2s ;
+}
+
+@keyframes iconmove {
+    90% {transform: rotate(180deg);}
+}
+
+.banner-img>img{
+   width: 556.01px;
+    height: 438px;
+}
+
+
+
+/* Main */
+.player-lists{
+   
+    margin-top: 70px;
+  margin-right: 40px;
+   margin-left: 40px;
+    margin-bottom: 165px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    align-items: flex-start;
+    grid-column-gap: 30px;
+}
+
+.player-cards{
+    display: flex;
+    justify-content: flex-end;
+    align-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.player-cards{
+    width: 330px;
+    height: 474px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+    margin-bottom: 27px;
+    padding: 15px;
+}
+
+.player-img>img{
+    width: 300px;
+    height: 256px;
+    border-radius: 5px;
+}
+
+.player-img{
+    transition: transform .2s;
+}
+
+.player-img:hover {
+    transform: scale(1.15); 
+}
+
+
+.player-details{
+    padding: 25px;
+}
+
+
+/* News */
+.news-head{
+    font-size: 40px;
+    padding-left: 45%;
+}
+
+.all-news{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+ }
+
+.news{
+    display: flex;
+    justify-items: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    margin: 10%;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    padding: 5%;
+    border-radius: 5%;
+}
+
+
+.news img{
+    width: 280px;
+    border-radius: 5%;
+ }
+ 
+ .all-news{
+    margin-bottom: 5%;
+    padding-left: 3%;
+    padding-right: 3%;
+     
+ }
+
+
+/* Annoucement Section */
+.highlights-section{
+
+}
+.annoucement{
+    padding-top: 0px;
+    padding-bottom: 150px;
+    margin-left: 20%;
+}
+
+.annoucement>img{
+}
+
+.annoucement-title{
+    justify-content: center;
+    padding-right: 6%;
+}
+
+.annoucement-title>h1{
+    font-weight: 700;
+    font-size: 48px;
+}
+.annoucement-title>p{
+    padding-bottom: 24px;
+    padding-right: 25px;
+}
+
+.watch-now{
+    
+}
+
+/* Newsletter (extras) */
+.newsLetter{
+    padding-top: 5%;
+    padding-bottom: 5%;
+    text-align: center;
+}
+
+.newsLetter>h1{
+    color: #2D25A0;
+}
+
+.newsLetter #email{
+    width: 40%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #13103a9d;
+    border-radius: 5px;
+}
+
+#submit{
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #2D25A0;
+    background-image: linear-gradient(to right, #2d25a0cb, #3b182598);
+    color: white;
+    border-radius: 5px;
+}
+
+
+
+/* Footer Section */
+.footer-elements{
+    display: flex;
+    align-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 65px;
+    padding-bottom: 20px;
+}
+
+.football-logo{
+    width: 483.87px;
+    height: 110px;
+}
+
+.others{
+    display: flex;
+    align-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.social-icons>i{
+}
+
+.fab{
+    color: #2d25a0cb;
+    padding: 10px;    
+}
+
+
+.copyright{
+    
+    font-size: 18px;
+}
+
+
+
+
+/*----------------
+    Media Query 
+-----------------*/
+
+/*------------------ 
+ For Mobile Devices 
+ -------------------*/
+@media only screen and (max-width:688px) {
+    html, body{
+        overflow-x: hidden;
+    }
+    
+    body{
+        width: 100%;
+        position: relative;
+    }
+    
+    .navbar{
+        display: none;
+    }
+
+    
+    header{
+        background-color: #2D25A0;
+        width: 110%;
+    }
+
+    /*---- Banner ----*/
+    .banner{
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0px;
+        padding-top: 40px;
+        padding-bottom: 70px;
+    }
+
+    .banner-title>h1{
+        font-size: 35px;
+    }
+
+    .banner-img>img{
+        width: 355px;
+        height: auto;
+        padding-right: 0px;
+    }
+
+    .banner-title{
+        padding-right: 0px;
+        padding-bottom: 30%;
+    }
+
+    /*---- Main ----*/
+    .player-lists{
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+        align-items: flex-start;
+        margin-bottom: 65px;
+    }
+
+    .player-cards{
+        display: flex;
+        justify-content: flex-start;
+        align-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-bottom: 5%;
+        padding: 15px 5px 15px 5px;
+    }
+
+     /*---- News----*/
+    .all-news{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin-bottom: 0%;
+        padding-left: 0%;
+    }
+
+    .news-head {
+        font-size: 30px;
+        padding-left: 18%;
+    }
+    
+    .news img {
+        width: 300px;
+        border-radius: 5%;
+    }
+
+    .news {
+        display: flex;
+        justify-items: center;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        margin: 5%;
+        box-shadow: 0px 0px 40px rgb(0 0 0 / 30%);
+        padding: 5%;
+        border-radius: 5%;
+    }
+
+
+     /*----Annoucement ----*/
+    .annoucement-title{
+        padding: 10%;
+    }
+
+    .annoucement-title>h1{
+        font-weight: 700;
+        font-size: 45px;
+    }
+
+    .annoucement{
+        padding-bottom: 20px;
+    }
+
+    .newsLetter{
+        margin: 10% 0;
+    }
+    .newsLetter>h1 {
+        color: #2D25A0;
+        font-size: 80%;
+        padding-left: 5%;
+    }
+
+
+    /*----Footer ----*/
+    .fab{
+        color: black; 
+        padding: 10px;   
+    }
+
+    .footer-elements{
+        margin-bottom: 50px;
+        padding-bottom: 25%;
+    }
+
+    .football-logo{
+        width: 271px;
+        height: 63px;
+        padding-bottom: 20px;
+    }
+
+    .copyright{
+        font-size: 18px;
+    }
+
+}
+
+
+/*---------------------------
+    For Tablet sized Devices 
+-----------------------------*/
+@media only screen and (min-width:688px) and (max-width: 992px) {
+    body{
+        overflow-x: hidden;
+    }
+    
+    /*---- navbar ----*/
+    .navbar{
+        display: flex;
+        align-content: center;
+        justify-content: space-evenly;
+        align-items: center;
+        padding-top: 40px;
+        flex-direction: column;
+    }
+
+    .nav-right{
+        padding-top: 30px;
+    }
+
+    
+    header{
+        background-color: #2D25A0;
+
+    }
+
+    /*---- Banner ----*/
+    .banner{
+        padding-top: 60px;
+        width: auto;
+        display: flex;
+        align-items: center;
+        margin-left: 0px;
+        padding: 5%;
+    }
+
+    .banner-title>h1{
+        font-size: 35px;
+    }
+
+    .banner-img>img {
+        width: 390px;
+        height: auto;
+        padding-right: 5px;
+    }
+
+    .banner-title{
+        padding-right: 0px;
+        padding-bottom: 10%;
+    }
+
+    
+    /*---- Main ----*/
+    .player-lists{
+        width: 92%;
+        margin-left: auto;
+        margin-right: auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+        align-items: flex-start;
+
+    }
+
+    .player-cards{
+        display: flex;
+        justify-content: flex-start;
+        align-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-bottom: 5%;
+        padding: 15px 5px 15px 5px;
+    }
+
+    /*---- News----*/
+    .news {
+        display: flex;
+        justify-items: center;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        margin: 3%;
+        box-shadow: 0px 0px 40px rgb(0 0 0 / 15%);
+        padding: 7%;
+        border-radius: 5%;
+    }
+
+    .all-news {
+        margin-bottom: 0%;
+        padding: 1%;
+    }
+
+    .news-info{
+        margin-left: 0px;
+    }
+
+    .news img {
+        width: 200px;
+        border-radius: 5%;
+    }
+
+    .news-head {
+        font-size: 40px;
+        padding-left: 33%;
+    }
+
+    /*----Annoucement ----*/
+    .annoucement-title{
+        padding: 1%;
+    }
+
+    .annoucement-title>h1{
+        font-weight: 700;
+        font-size: 25px;
+    }
+
+    #highlights-img{
+        width: 330px;
+        height: auto;
+        padding-right: 10px;
+    }
+
+
+    /*----Footer ----*/
+    .fab{
+        color: black; 
+        padding: 10px;   
+    }
+
+    .footer-elements{
+        margin-bottom: 50px;
+        padding-bottom: 59%;
+    }
+
+    .football-logo{
+        width: 271px;
+        height: 63px;
+        padding-bottom: 20px;
+    }
+
+    .copyright{
+        font-size: 18px;
+    }
+}
