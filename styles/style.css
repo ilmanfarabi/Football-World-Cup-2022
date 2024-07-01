@@ -215,17 +215,14 @@ li {
 
 
 /* Annoucement Section */
-.highlights-section{
 
-}
 .annoucement{
     padding-top: 0px;
     padding-bottom: 150px;
     margin-left: 20%;
 }
 
-.annoucement>img{
-}
+
 
 .annoucement-title{
     justify-content: center;
@@ -241,9 +238,7 @@ li {
     padding-right: 25px;
 }
 
-.watch-now{
-    
-}
+
 
 /* Newsletter (extras) */
 .newsLetter{
@@ -299,8 +294,6 @@ li {
 }
 
 
-.social-icons>i{
-}
 
 .fab{
     color: #2d25a0cb;
